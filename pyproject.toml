@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "knowledge-rag"
+version = "0.1.0"
+description = "A simple RAG pipeline"
+authors = [
+    { name = "Meet Patel", email = "meet.patel32884@outlook.com" }
+]
+
+# ----------------------------------------------------------------
+# Runtime dependencies
+# ----------------------------------------------------------------
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "scipy",
+    "gradio",
+    "python-dotenv",
+    "openai",
+    "anthropic",
+]
+
+# ----------------------------------------------------------------
+# Package discovery and structure
+# ----------------------------------------------------------------
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+
